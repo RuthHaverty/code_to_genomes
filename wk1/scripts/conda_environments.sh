@@ -15,6 +15,8 @@ module load anaconda/3.5.2
 # To see a list of available modules, we can use the module avail command.
 module avail 
 
+# To exit module avail, you can use ctrl +c
+
 # To see a list of modules that are currently loaded, we can use the module list command.
 moudle list
 
@@ -37,7 +39,12 @@ cd tools
 # commonly used for comparing protein or nucleotide sequences against large databases. 
 # It employs efficient algorithms and heuristics, providing a faster alternative to traditional tools like BLAST for analyzing large-scale genomic and metagenomic datasets.
 
+# The first time you use conda, you need to run conda init bash to initialize your shell.
+conda init bash
+
 # create the conda environment first using a prefix command to specify the path to the new environment
+# you can check for previous environments using the command: conda env list
+conda env list
 conda create --prefix /home/people/<username>/tools/diamond_env
 
 # Activate the new environment
@@ -65,7 +72,7 @@ mkdir -p training/wk1/data
 cd training/wk1/data
 
 # Step 4: Copy the fasta file from my home directory to your scratch folder
-cp /home/people/<username>/training/wk1/data/HEV3.fasta .
+cp /scratch/fitzpatria_sh/wk1/data/HEV3.fasta .
 
 # Step 5: Create the diamond_db
 diamond makedb --in HEV3.fasta -d HEV3
