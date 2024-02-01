@@ -16,16 +16,21 @@ conda activate /your_path/entrez-direct
 
 # Specify the GenBank accession number that you want to download
 # You will want to download at least 5 sequences for the next exercise, so make sure they are different
-accession_number=""  # Replace with the actual accession number
+accession_number="your_accession_number"  # Replace with the actual accession number
 
 # Specify the output file name for the FASTA file
 # Remember to include the .fasta extension
 # Output files should be stored in the training/wk1/data folder
-output_file=""
-outdir=""
+output_file="output.fasta"
+
+# Specify the output directory
+outdir="your_output_directory"
 
 # Fetch the nucleotide sequence for the provided accession number
 # Try to modify this command to download protein sequences instead of nucleotide sequences
 response=$(efetch -db nuccore -id "$accession_number" -format fasta -mode text 2>/dev/null)
 
-conda deactivate /your_path/entrez-direct
+# Redirect the response to the output file
+echo "$response" > "$outdir/$output_file"
+
+conda deactivate
