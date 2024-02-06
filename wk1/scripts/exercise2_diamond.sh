@@ -28,5 +28,5 @@ $diamond_path blastn \
   --outfmt 6 \
   --threads 5
 
-# Now modify the script to run Diamond for protein sequence alignment
-# Modify the script to run work wtih a query file containing multiple sequences
+conda deactivate
+module unload anaconda/3.5.2
