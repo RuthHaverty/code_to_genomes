@@ -19,7 +19,7 @@ NanoPlot --fastq /home/people/<username>/scratch/training/wk2/data/<fastq-file>.
 NanoComp --fastq /home/people/<username>/scratch/training/wk2/data/<fastq-file1>.fastq /home/people/<username>/scratch/training/wk2/data/<fastq-file2>.fastq --outdir /home/people/<username>/scratch/training/wk2/data/<output-dir>
 
 # Run NanoQC
-NanoQC /home/people/<username>/scratch/training/wk2/data/<fastq-file>.fastq --outdir /home/people/<username>/scratch/training/wk2/data/<output-dir>
+nanoQC /home/people/<username>/scratch/training/wk2/data/<fastq-file>.fastq --outdir /home/people/<username>/scratch/training/wk2/data/<output-dir>
 
 # Run Chopper and then NanoPlot on the output
 # Replace <min-length>, <max-length>, and <max-errors> with your actual values
