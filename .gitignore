@@ -9,3 +9,6 @@
 *.exe
 *.dll
 *.fastq
+
+# don't upload yang_liu
+yang_liu/
