@@ -105,3 +105,21 @@ You can also make your repository private or public. If you make your repository
 
 ### Challenge
 We talked last week about the importance of open science, documentation and reproducibility. The best way to test your protocol in the dry or wet-lab is to get someone else to try it. This is also true for your code. You should add one person in the group as a collaborator to your repository. They should be able to clone your repository, run your code and provide feedback.
+
+* Try to run your collaborator's code. What issues did you encounter?
+* Raise those issues with your collaborator as an issue on GitHub.
+* Try to fix the issues that your collaborator raised.
+* Push the changes to your repository.
+
+#### Points for reproducibility
+
+* Use a consistent and clear coding style
+* Document your data sources and transformations
+* Use relative paths and portable formats
+* Automate your workflow and analysis
+* Test and debug your code
+* Use version control
+* Share your code and data
+
+
+
