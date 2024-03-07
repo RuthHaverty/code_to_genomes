@@ -28,7 +28,7 @@ At the prompt, type a secure passphrase.
 
 Now we should add this key to your GitHub account. To do this, you go the file where you have stored the keys. There will be one that is private and one that is public. Go to the settings on your GitHub page and navigate to SSH and GPG keys. Here you can add a new SSH key. You can copy the public key and paste it here. 
 
-Theoretically, you can now work in git on the HPC and 'push' your updates to your github repository. However, you will need to enter your passphrase each time you do this. Record your commands somewhere safe, as you will need to enter them each time youu want to push something to GitHub.. 
+Theoretically, you can now work in git on the HPC and 'push' your updates to your github repository. However, you will need to enter your passphrase each time you do this. Record your commands somewhere safe, as you will need to enter them each time youu want to push something to GitHub. 
 
 ```bash
 eval `ssh-agent -s`
@@ -44,8 +44,8 @@ While this works fine for small repositories, it is not recommended for large re
 git init
 git add .
 git commit -m "First commit"
+git remote add rigin git@github.com:username/repository.git
 git branch -M main
-git remote add origin
 git push -u origin main
 ```
 What do you thing is the issue with running git push like this? You have been working hard over the past few weeks. You have generated a lot of data. Do you really need to push that onto GitHub? Will it allow you to push all this data online? 

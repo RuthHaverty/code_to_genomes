@@ -12,3 +12,17 @@
 
 # don't upload yang_liu
 yang_liu/
+data/
+raw_data/
+reference/
+plots/
+*.fastq
+*.fastq.gz
+*.fasta
+*.csv
+*.tsv
+
+wk1/data/
+wk1/logs/
+wk2/data/
+wk1/logs/
